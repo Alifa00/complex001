@@ -19,7 +19,7 @@ struct complex_t {
         result.imag = imag - other.imag;
         return result;
     }
-    complex_t multi(complex_t other) const {
+    complex_t mul(complex_t other) const {
         complex_t result;
         result.real = real * other.real - imag * other.imag;
         result.imag = real * other.imag + imag * other.real;
@@ -53,7 +53,7 @@ int main() {
                 result.write(cout);
                 break;
             case '*':
-                result = a.multi(b);
+                result = a.mul(b);
                 result.write(cout);
                 break;
             case '/':
