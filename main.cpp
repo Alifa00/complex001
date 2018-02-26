@@ -2,8 +2,8 @@
 using namespace std;
 struct complex_t {
     complex_t() {
-        real = 0.0f;
-        imag = 0.0f;
+        real = 0.0f;  //вещественные 
+        imag = 0.0f;  //мнимые
     }
     float real;
     float imag;
